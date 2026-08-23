@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything Pet · Reservations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">🐾</span>
+        Everything Pet
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="adopt.html">Adopt a pet</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-hero">
+      <span class="eyebrow">Bookkeeping</span>
+      <h1>Scheduled services</h1>
+      <p class="lead">Every boarding and walking request we have received, newest first.</p>
+    </section>
+
+    <section class="container">
+      <div id="reservation-list" class="reservation-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Everything Pet</span>
+      <span>Boarding · Walking · Adoption</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/reservations.js"></script>
+</body>
+</html>
