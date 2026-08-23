@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything Pet · Adopt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">🐾</span>
+        Everything Pet
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="nav-cta active" href="adopt.html">Adopt a pet</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-hero">
+      <span class="eyebrow">Free adoption</span>
+      <h1>Meet pets looking for a home.</h1>
+      <p class="lead">These animals are ready for adoption today. Choose one, tell us a little about yourself, and we will follow up. There is no adoption fee.</p>
+    </section>
+
+    <section class="container">
+      <div id="pet-grid" class="pet-grid"></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="apply-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <h2 id="modal-title">Apply to adopt</h2>
+      <p class="muted">Adoption is free. Send this form and our team will review your application.</p>
+      <form id="adopt-form">
+        <div class="form-grid">
+          <label>
+            Pet
+            <input id="pet-name" name="pet" readonly>
+          </label>
+          <label>
+            Full name
+            <input id="full-name" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            Why this pet?
+            <textarea name="reason" required placeholder="Tell us about your home and why you would be a good match."></textarea>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="close-modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Submit application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Everything Pet</span>
+      <span>Boarding · Walking · Adoption</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/adopt.js"></script>
+</body>
+</html>

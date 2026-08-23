@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything Pet · Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">🐾</span>
+        Everything Pet
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="adopt.html">Adopt a pet</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-hero">
+      <span class="eyebrow">Contact us</span>
+      <h1>We would love to hear from you.</h1>
+      <p class="lead">Ask about boarding, walks, or adoption. Send a note and we will get back to you.</p>
+    </section>
+
+    <section class="container">
+      <form id="contact-form" class="contact-card" novalidate>
+        <div class="form-grid">
+          <label>
+            Full name
+            <input id="full-name" name="fullName" autocomplete="name" required>
+            <span class="field-error" data-error-for="fullName"></span>
+          </label>
+          <label>
+            Email
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <span class="field-error" data-error-for="email"></span>
+          </label>
+          <label>
+            Tell me why <span class="optional">(optional)</span>
+            <textarea id="why" name="why" placeholder="Boarding, a walk, adoption, or anything else."></textarea>
+            <span class="field-error" data-error-for="why"></span>
+          </label>
+        </div>
+        <p class="field-error" data-error-for="form"></p>
+        <button type="submit" class="btn btn-primary">Contact us</button>
+      </form>
+
+      <div id="confirmation" class="confirmation" hidden role="status">
+        <h2>Message sent</h2>
+        <p class="muted">Thanks for reaching out. We have your note and will reply by email.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Everything Pet</span>
+      <span>Boarding · Walking · Adoption</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
